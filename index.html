@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>RGB Tester</title>
+  </head>
+  <body>
+    <h1>Testador de Cores - RGB</h1>
+    <div class="content-center">
+      <form>
+        <label for="red">(R) Vermelho</label>
+        <input
+          type="range"
+          id="red"
+          value="0"
+          min="0"
+          max="255"
+          onchange="getColorReference()"
+        />
+        <input type="text" id="redValue" readonly="true" />
+      </form>
+      <form>
+        <label for="green">(G) Verde</label>
+        <input
+          type="range"
+          id="green"
+          value="0"
+          min="0"
+          max="255"
+          onchange="getColorReference()"
+        />
+        <input type="text" id="greenValue" readonly="true" />
+      </form>
+      <form>
+        <label for="blue">(B) Azul</label>
+        <input
+          type="range"
+          id="blue"
+          value="0"
+          min="0"
+          max="255"
+          onchange="getColorReference()"
+        />
+        <input type="text" id="blueValue" readonly="true" />
+      </form>
+      <div id="box-color"></div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
